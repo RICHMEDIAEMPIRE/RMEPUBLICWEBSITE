@@ -3,59 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>All Layouts | RME Web Design</title>
+  <title>Layouts | Rich Media Empire</title>
   <style>
     body {
-      background-color: #111;
-      color: #eee;
-      font-family: sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
       margin: 0;
       padding: 2rem;
+      color: #333;
+    }
+    header {
       text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    p {
       margin-bottom: 2rem;
     }
-    .button-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      max-width: 800px;
-      margin: auto;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
     }
-    a {
-      display: block;
-      background: #0f0;
-      color: #000;
-      padding: 1rem;
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      margin: 0 1rem;
       text-decoration: none;
-      border-radius: 5px;
+      color: #0077cc;
       font-weight: bold;
-      transition: background 0.2s;
     }
-    a:hover {
-      background: #8f8;
+    .layout-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+    .card h3 {
+      margin-top: 0.75rem;
+      font-size: 1.1rem;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>Layout Showcase</h1>
-  <p>Click a layout below to preview the full design example.</p>
-  <div class="button-grid">
-    <a href="layout-artist.html">Artist</a>
-    <a href="layout-restaurant.html">Restaurant</a>
-    <a href="layout-startup.html">Startup</a>
-    <a href="layout-consultant.html">Consultant</a>
-    <a href="layout-merch.html">Merch Store</a>
-    <a href="layout-blog.html">Blog</a>
-    <a href="layout-tech.html">Tech</a>
-    <a href="layout-agency.html">Agency</a>
-    <a href="layout-portfolio.html">Portfolio</a>
-    <a href="layout-services.html">Services</a>
+  <header>
+    <h1>Layout Showcase</h1>
+    <p>Preview designs, mockups, and services</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="layouts.html">Layouts</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="layout-grid">
+    <div class="card">
+      <img src="front_design_4500x5400.png" alt="Front Shirt Design" />
+      <h3>Front Design – Meme Tee</h3>
+    </div>
+    <div class="card">
+      <img src="back_for_printify_fixed.png" alt="Back Shirt Design" />
+      <h3>Back Design – Meme Tee</h3>
+    </div>
+    <div class="card">
+      <img src="mockup1.png" alt="Lifestyle Mockup" />
+      <h3>Shirt Mockup</h3>
+    </div>
+    <div class="card">
+      <img src="web-template-preview.png" alt="Web Template" />
+      <h3>Sample Web Template</h3>
+    </div>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 Rich Media Empire. All rights reserved.
   </div>
 </body>
 </html>
