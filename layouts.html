@@ -3,22 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Layouts | Rich Media Empire</title>
+  <title>Web Design | Rich Media Empire</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
+      background: #f5f7fa;
       margin: 0;
       padding: 2rem;
-      color: #333;
+      color: #222;
     }
     header {
       text-align: center;
       margin-bottom: 2rem;
     }
     h1 {
-      font-size: 2rem;
-      margin-bottom: 0.25rem;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p.lead {
+      font-size: 1.2rem;
+      color: #555;
     }
     nav {
       text-align: center;
@@ -27,70 +31,66 @@
     nav a {
       margin: 0 1rem;
       text-decoration: none;
-      color: #0077cc;
+      color: #0066cc;
       font-weight: bold;
     }
-    .layout-grid {
+    .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
+      gap: 2rem;
     }
     .card {
-      background: white;
+      background: #fff;
+      padding: 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       text-align: center;
     }
-    .card img {
-      max-width: 100%;
-      border-radius: 4px;
-    }
     .card h3 {
-      margin-top: 0.75rem;
-      font-size: 1.1rem;
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      color: #111;
+    }
+    .card p {
+      color: #555;
     }
     .footer {
       text-align: center;
       margin-top: 3rem;
       font-size: 0.9rem;
-      color: #777;
+      color: #888;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Layout Showcase</h1>
-    <p>Preview designs, mockups, and services</p>
+    <h1>Rich Media Empire</h1>
+    <p class="lead">Professional Web Design for Entrepreneurs & Brands</p>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="layouts.html">Layouts</a>
+    <a href="layouts.html">Web Design</a>
     <a href="#">Contact</a>
   </nav>
 
-  <section class="layout-grid">
+  <section class="services">
     <div class="card">
-      <img src="front_design_4500x5400.png" alt="Front Shirt Design" />
-      <h3>Front Design – Meme Tee</h3>
+      <h3>Starter Website – $300</h3>
+      <p>1-page layout with branding, contact form, and mobile optimization. Fast delivery. Perfect for small businesses and portfolios.</p>
     </div>
     <div class="card">
-      <img src="back_for_printify_fixed.png" alt="Back Shirt Design" />
-      <h3>Back Design – Meme Tee</h3>
+      <h3>E-Commerce Launch – $500</h3>
+      <p>Full Shopify or Etsy integration with 5 product listings, checkout setup, and responsive design. Great for merch and digital stores.</p>
     </div>
     <div class="card">
-      <img src="mockup1.png" alt="Lifestyle Mockup" />
-      <h3>Shirt Mockup</h3>
-    </div>
-    <div class="card">
-      <img src="web-template-preview.png" alt="Web Template" />
-      <h3>Sample Web Template</h3>
+      <h3>Business Suite – $800+</h3>
+      <p>Multi-page websites with full service: blog, contact, gallery, CRM-ready structure. Designed to grow with your brand.</p>
     </div>
   </section>
 
   <div class="footer">
-    &copy; 2025 Rich Media Empire. All rights reserved.
+    &copy; 2025 Rich Media Empire | Web Design by Builders, For Builders.
   </div>
 </body>
 </html>
