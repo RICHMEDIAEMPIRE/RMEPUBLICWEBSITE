@@ -50,19 +50,39 @@
       color: #ccc;
     }
 
-    /* Catfish Empire Logo Button */
+    /* Catfish Empire Logo Button - Glow + Pulse */
     .catfish-logo-button {
       width: 160px;
       height: auto;
       margin-top: 1rem;
-      transition: transform 0.3s ease;
       display: block;
       margin-left: auto;
       margin-right: auto;
+      animation: pulse 2s infinite;
     }
 
-    .catfish-logo-button:hover {
-      transform: scale(1.05);
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0px gold;
+      }
+      50% {
+        box-shadow: 0 0 20px gold;
+      }
+      100% {
+        box-shadow: 0 0 0px gold;
+      }
+    }
+
+    /* Jumping arrow */
+    .jump-arrow {
+      font-size: 2rem;
+      animation: jump 1.5s infinite;
+      margin-bottom: 1rem;
+    }
+
+    @keyframes jump {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
     }
   </style>
 
@@ -112,10 +132,14 @@
     <a class="button" href="https://x.com/RICHMEDIAEMPIRE" target="_blank">Follow on X</a>
   </section>
 
-  <!-- ✅ Catfish Empire™ Section -->
+  <!-- ✅ Catfish Empire™ Section (Enhanced) -->
   <section>
     <h2>Explore Catfish Empire™</h2>
     <p>Hardcore catfishing in the Carolinas.<br>Trophy catches. Southern grit. Royal style.</p>
+    <p style="font-size: 1.2rem; font-weight: bold; margin-top: 2rem;">
+      Click here to enter Catfish Empire™
+    </p>
+    <div class="jump-arrow">⬇️</div>
     <a href="https://catfishempire.com" target="_blank">
       <img src="TM.png" alt="Catfish Empire Logo" class="catfish-logo-button" />
     </a>
@@ -129,4 +153,7 @@
   </section>
 
   <footer>
-    &copy; 2024 Ric
+    &copy; 2024 Rich Media Empire. All rights reserved.
+  </footer>
+</body>
+</html>
