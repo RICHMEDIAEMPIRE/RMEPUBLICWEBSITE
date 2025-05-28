@@ -3,74 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Catfish Empire™</title>
+  <title>Rich Media Empire</title>
   <style>
     body {
-      background: url('TM.png') no-repeat center center fixed;
-      background-size: cover;
+      background: #111;
       margin: 0;
       font-family: Arial, sans-serif;
       color: white;
       text-align: center;
     }
 
-    .hero {
+    header {
       padding: 3rem 1rem 2rem;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.7);
     }
 
-    .logo {
-      width: 120px;
-      height: auto;
+    section {
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      margin: 1rem 0;
     }
 
-    .logo-button {
-      width: 150px;
+    .button {
+      display: inline-block;
+      background: gold;
+      color: black;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .ml-embedded-container {
+      background: transparent;
+      color: inherit;
+      font-family: inherit;
+      padding: 2rem;
+    }
+
+    footer {
+      margin: 2rem 0;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    /* Catfish Empire Logo Button */
+    .catfish-logo-button {
+      width: 160px;
       height: auto;
       margin-top: 1rem;
       transition: transform 0.3s ease;
-      border: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .logo-button:hover {
+    .catfish-logo-button:hover {
       transform: scale(1.05);
     }
-
-    .catfish-empire .hero {
-      padding: 3rem 1rem;
-      background: rgba(0, 0, 0, 0.85);
-      margin-top: 2rem;
-      border-top: 2px solid gold;
-    }
-
-    a img {
-      display: block;
-      margin: 0 auto;
-    }
-
-    a {
-      text-decoration: none;
-    }
   </style>
+
+  <!-- MailerLite Universal Script -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1510710');
+  </script>
 </head>
 <body>
+  <header>
+    <h1>Rich Media Empire</h1>
+    <p>Building Brands. Powering Profits. Creating Legacy.</p>
+  </header>
 
-  <div class="hero">
-    <img src="TM.png" alt="Main Logo" class="logo" />
-    <h1>Welcome to the Empire</h1>
-    <p>Building digital brands with bold vision.</p>
-  </div>
+  <section>
+    <h2>Merch Store</h2>
+    <a class="button" href="https://www.etsy.com/shop/RICHMEDIAEMPIRE" target="_blank">Etsy</a>
+  </section>
 
-  <!-- Catfish Empire™ Section -->
-  <section class="catfish-empire">
-    <div class="hero">
-      <h2>Explore Catfish Empire™</h2>
-      <p>Hardcore catfishing in the Carolinas. Trophy catches. Southern grit. Royal style.</p>
-      <a href="https://catfishempire.com" target="_blank">
-        <img src="TM.png" alt="Catfish Empire Logo" class="logo-button" />
-      </a>
+  <section>
+    <h2>Web Design</h2>
+    <p>Starting at $250</p>
+    <a class="button" href="mailto:rich@richmediaempire.com">Inquire</a>
+    <a class="button" href="webdesign.html">Web Design</a>
+  </section>
+
+  <section>
+    <h2>Ebooks</h2>
+    <a class="button" href="https://rmempire.gumroad.com/l/flxaw" target="_blank">View Ebooks</a>
+  </section>
+
+  <section>
+    <h2>Content</h2>
+    <a class="button" href="https://youtube.com/@RICHMEDIAEMPIRE" target="_blank">YouTube Channel</a>
+  </section>
+
+  <section>
+    <h2>Socials</h2>
+    <a class="button" href="https://x.com/RICHMEDIAEMPIRE" target="_blank">Follow on X</a>
+  </section>
+
+  <!-- ✅ NEW: Catfish Empire Section -->
+  <section>
+    <h2>Explore Catfish Empire™</h2>
+    <p>Hardcore catfishing in the Carolinas.<br>Trophy catches. Southern grit. Royal style.</p>
+    <a href="https://catfishempire.com" target="_blank">
+      <img src="TM.png" alt="Catfish Empire Logo" class="catfish-logo-button" />
+    </a>
+  </section>
+
+  <!-- Signup Form Section -->
+  <section class="signup-section">
+    <div class="ml-embedded-container">
+      <div class="ml-embedded" data-form="r6e7Vu"></div>
     </div>
   </section>
 
+  <footer>
+    &copy; 2024 Rich Media Empire. All rights reserved.
+  </footer>
 </body>
 </html>
