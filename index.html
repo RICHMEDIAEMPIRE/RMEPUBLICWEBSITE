@@ -7,11 +7,18 @@
   <style>
     body {
       background: #000 url('bg-spotlight-logo.jpg') no-repeat center center fixed;
-      background-size: 95%; /* 25% smaller than full screen */
+      background-size: cover; /* Default for mobile */
       margin: 0;
       font-family: Arial, sans-serif;
       color: white;
       text-align: center;
+    }
+
+    /* Desktop only: background image 50% size */
+    @media screen and (min-width: 768px) {
+      body {
+        background-size: 50%;
+      }
     }
 
     header {
@@ -50,7 +57,6 @@
       color: #ccc;
     }
 
-    /* Catfish Empire Logo Button - Glow + Pulse */
     .catfish-logo-button {
       width: 160px;
       height: auto;
@@ -62,18 +68,11 @@
     }
 
     @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0px gold;
-      }
-      50% {
-        box-shadow: 0 0 20px gold;
-      }
-      100% {
-        box-shadow: 0 0 0px gold;
-      }
+      0% { box-shadow: 0 0 0px gold; }
+      50% { box-shadow: 0 0 20px gold; }
+      100% { box-shadow: 0 0 0px gold; }
     }
 
-    /* Jumping arrow */
     .jump-arrow {
       font-size: 2rem;
       animation: jump 1.5s infinite;
@@ -97,7 +96,7 @@
 </head>
 <body>
 
-  <!-- Optional: Background Overlay for Readability -->
+  <!-- Optional Overlay -->
   <div style="position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: -1;"></div>
 
   <header>
@@ -135,7 +134,7 @@
   <!-- ✅ Catfish Empire™ Section -->
   <section>
     <h2>Explore Catfish Empire™</h2>
-    <p>Hardcore catfishing in the Carolinas.<br>Trophy catches. Southern grit. Royal style.</p>
+    <p>Hardcore catfishing in the Carolinas.<br>Trophy catches. Southern waters. Royal style.</p>
     <p style="font-size: 1.2rem; font-weight: bold; margin-top: 2rem;">
       Click here to enter Catfish Empire™
     </p>
@@ -145,7 +144,6 @@
     </a>
   </section>
 
-  <!-- Signup Form Section -->
   <section class="signup-section">
     <div class="ml-embedded-container">
       <div class="ml-embedded" data-form="r6e7Vu"></div>
